@@ -612,7 +612,7 @@ a:hover {
 	background-color: black;
 	display: grid;
   	grid-template-columns: repeat(8, 1fr);
-  	padding: 4vmin 30vmin 4vmin 30vmin;
+  	padding: 4vmin 30vmin 13vmin 30vmin;
   	grid-column-gap: 15vmin;
   	grid-row-gap: 12vmin;
 }
@@ -785,7 +785,7 @@ a:hover {
 	grid-row-end: span 4;
 	overflow: visible;
 	 position: absolute;
-  z-index: 1; /* Ensure the image is above the content */
+  z-index: 1; 
   margin: 3rem;
 }
 
