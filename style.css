@@ -1,0 +1,1155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	color: white;
+
+
+}
+
+p{
+	margin: 0;
+	
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+	color: white ;
+	background-color: black;
+	width: 100vw;
+	position: fixed;
+	z-index: 2;
+
+}
+
+.contentMenu{
+	display: flex;
+	flex-direction: row;
+	color: white ;
+	justify-content: space-between;
+	margin-top: 1.3rem;
+	margin-bottom: .2rem;
+}
+
+
+
+.sideMenu{
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;
+	margin-bottom: 0rem;
+	margin-right: 3rem;
+}
+
+#bold{
+	font-weight: 700;
+}
+
+.navLink:hover{
+	font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+a:hover {
+	font-weight: 700;
+}
+
+
+.title{
+	margin-top: .8rem;
+	margin-left: 3rem;
+	font-size: 1.8rem;
+	
+}
+
+
+.menu a{
+	font-family: "Krub", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: white;
+  	margin: 2rem;
+  	font-size: 1rem;
+
+}
+
+.line {
+  border-bottom: .15rem solid white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  
+}
+
+.fullWidth {
+  grid-column-end: span 8;
+}
+
+.combinedGrid{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-row-gap: 0vmin;
+	padding: 0vmin;
+
+}
+
+.combinedGrid * {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 0rem 3rem 0rem 3rem;
+ 
+
+
+ }
+
+
+.heading {
+ 	display: flex;
+	align-items: center;
+ 	 flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	 background-image: url(heading-ezgif.com-crop.gif);
+  background-position: center 37%;
+  background-size: cover;
+  justify-self: stretch;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 8rem;
+  margin-top: 5rem;
+
+
+
+
+}
+
+
+
+
+.heading > p:first-child{
+	font-size: 7rem;
+	font-weight: 300;
+	animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+
+}
+
+.heading > p:last-child{
+	font-size: 2.5rem;
+	font-weight: 100;
+	animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+
+}
+
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: .5rem;
+  grid-row-gap: 2rem;
+  padding: 5rem 5rem 5rem 5rem;
+  background: linear-gradient(black, #E5E8EE 8%);
+  color: black;
+
+}
+
+.vl {
+  border-left: .1rem solid black;
+
+  height: 500px;
+
+} 
+
+.vlRight {
+  border-right: .1rem solid black;
+
+  height: 500px;
+
+} 
+
+.titleQuestions{
+	font-size: 3rem;
+	font-weight: 400;
+	margin-left: -4rem;
+	grid-column-start: 2;
+	grid-column-end: span 6;
+	line-height: 10rem;
+
+}
+
+.twoThirdWidth{
+	grid-column-end: span 5;
+	
+}
+
+.breaker{
+	font-weight: 800;
+	font-size: 4rem;
+	border-bottom: .1rem solid black;
+}
+
+.item-4x2 {
+  	grid-column-end: span 4;
+  	grid-row-end: span 2;
+  	position: relative; 
+  	overflow: visible;
+
+
+
+}
+
+.item-4x2 > p{
+	font-family: "Krub", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+
+#playground{
+	margin-left: 6rem;
+	width: 80%;
+	height: 90%;
+
+}
+
+
+.end{
+	display: flex;
+	justify-content: flex-end;
+	grid-column-start: 4;
+
+}
+
+.linkButton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem	;
+	height: 7rem;
+	width: 20rem;
+	border-radius: 2rem ;
+	background-color: white;
+	border: solid black;
+	box-shadow: .5rem .5rem .6rem gray;
+	
+
+}
+
+.button{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+
+}
+
+.button > a{
+	text-decoration: none;
+	padding: 2rem;
+	color: black;
+}
+.buttonTwo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+.buttonTwo > a{
+	text-decoration: none;
+	padding: 2rem;
+	color: black;
+}
+
+.text{
+	font-family: "Krub", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 1.3rem;
+}
+
+
+/*START OF PAGE TWO */
+
+
+.headerGridTwo {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 5rem 3rem 3rem 8rem;
+ 
+
+
+ }
+.headingTwo {
+ 	display: flex;
+
+ 	 flex-direction: column;
+
+	height: 70vh;
+	 background-image: url(playground.gif);
+  background-position: center 37%;
+  background-size: contain;
+  justify-self: stretch;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 5rem;
+}
+
+.headingTwo > p:first-child {
+  font-size: 7rem;
+  text-align: left;
+  text-shadow: .3rem 0.2rem 0.5rem white;
+
+}
+
+.headingTwo > p:nth-child(2) {
+  font-size: 7rem;
+  text-align: left;
+  text-shadow: .3rem 0.2rem 0.5rem white;
+}
+
+.headingTwo > p:nth-child(3) {
+	margin-top: 7rem;
+	font-weight: 200;
+  font-size: 2rem;
+  text-align: center;
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+
+.descriptionGrid{
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	grid-column-gap: .5rem;
+  	grid-row-gap: 2rem;
+ 	 padding: 7rem 10rem 0rem 10rem;
+  	background-color: black;
+ 	 color: white;
+ 	 font-size: 2.4rem;
+ 	 font-weight: 300;
+}
+
+.descriptionGrid > .fullWidth{
+	margin-bottom: 10rem;
+}
+
+.descriptionGrid> p:nth-child(2) {
+	text-align: right;
+}
+
+.descriptionGrid> p:nth-child(4) {
+	margin-top: 0rem;
+	font-weight: bold;
+  	font-size: 2.6rem;
+  	text-align: left;
+  	margin-bottom: 2rem;
+}
+
+.buttonAreaGrid{
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	grid-column-gap: .5rem;
+  	grid-row-gap: 2rem;
+ 	 padding: 12rem 10rem 7rem 10rem;
+  	background-color: white;
+ 	background: linear-gradient(black, #E5E8EE);
+ 	 font-size: 2.4rem;
+ 	 font-weight: 300;
+
+}
+
+.inputButton {
+
+  	background-color: #E5E8EE;
+  	border: none;
+  	color: black;
+  	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 300;
+	font-style: normal;
+	border-radius: 1rem;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	cursor: pointer;
+  	width: 8em;  
+  	height: 3em;
+  	margin-left: 3rem;
+
+}
+
+.inputButton {font-size: 2rem;}
+
+.inputButton {
+  transition-duration: 0.4s;
+}
+
+.inputButton:hover {
+  background-color: black; /* Green */
+  color: white;
+}
+
+
+
+.buttonAreaGrid > .fullWidth{
+	margin-bottom:4rem;
+}
+
+.buttonAreaGrid> .buttonRow:last-child{
+	justify-self: center;
+
+}
+
+#submitButton{
+	margin-left: 0;
+	background-color: black	;
+	color: white;
+	margin-top: 3rem;
+	
+}
+
+#link{
+	display: none;
+}
+
+#submitButton:hover{
+	background-color: white; /* Green */
+  color: black;
+}
+#margin{
+	display:none;
+	margin-top: 5rem;
+}
+
+#age{
+	display: none;
+}
+
+/*START OF PAGE THREE*/
+
+.mainContentGrid{
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	grid-column-gap: .5rem;
+  	grid-row-gap: 2rem;
+ 	padding: 7rem 5rem 0rem 5rem;
+  	background-color: black;
+ 	color: white;
+ 	font-family: "Krub", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	font-size: 2.4rem;
+
+}
+
+.seporator{
+	  border-left: .1rem solid white;
+
+  height: 65vh;
+}
+
+.headingThree{
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 300;
+	font-style: normal;
+	font-size: 4rem;
+}
+
+.headingThree>p:first-child{
+	margin-left: 3rem;
+}
+
+.headingThree>p:last-child{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 5rem;
+}
+
+.secondContentGrid{
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	grid-column-gap: .5rem;
+  	grid-row-gap: 3rem;
+ 	padding: 5rem 5rem 5rem 5rem;
+  	background-color: #E5E8EE;
+ 	color: black;
+ 	font-family: "Krub", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	font-size: 2.4rem;
+
+}
+
+#titleOne{
+	font-size: 3rem;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 700;
+	font-style: normal;
+
+}
+
+.twoThridWidth{
+	grid-column-end: span 6;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.thirdContentGrid{
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	grid-column-gap: .5rem;
+  	grid-row-gap: 4rem;
+ 	padding: 5rem 5rem 5rem 5rem;
+  	background-color: black;
+ 	color: white;
+ 	font-family: "Krub", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	font-size: 2.4rem;
+
+}
+
+#titleTwo{
+	font-size: 3rem;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 300;
+	font-style: normal;
+
+}
+
+
+
+.item4x2{
+	display: grid;
+	grid-column-start:1 ;
+  	grid-column-end: span 3;	
+	position: relative; 
+  	overflow: visible;
+  	margin-left: -10rem;
+
+}
+
+
+
+.item4x2-1{
+	grid-column-start: 4;
+  	grid-column-end: span 5;
+  	grid-row-end: span 2;
+  	position: relative; 
+  	overflow: visible;
+	font-size: 1.5rem;
+	font-weight: 300;
+
+
+}
+
+.item4x2-1 p{
+	margin-bottom: 3rem;
+}
+
+/*START OF PAGE 4*/
+
+.headingFour{
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: span 5;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 200;
+	font-style: normal;
+	font-size: 3.5rem;
+
+
+}
+
+.headerGridThree {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 8rem 3rem 3rem 8rem;
+   	grid-column-gap: .5rem;
+  	grid-row-gap: 2rem;
+ 	
+  	background-color: black;
+  	position: relative; 
+  	overflow: visible;
+
+
+ }
+
+.horizontalSeporator{
+	border-bottom: .1rem solid white;
+	width: 103%;
+
+}
+
+.resourcesGrid{
+	background-color: black;
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	padding: 4vmin 30vmin 4vmin 30vmin;
+  	grid-column-gap: 15vmin;
+  	grid-row-gap: 12vmin;
+}
+
+.box-4x2{
+	background-color: #E5E8EE;
+	grid-column-end: span 4;
+  	grid-row-end: span 6;
+  	position: relative; 
+  	overflow: visible;
+  	border-radius: 3rem;
+  	position: relative;
+}
+
+.resourcesGrid> .box-4x2:first-child{
+	background-image: url(resource-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+}
+
+.image__img {
+	display: block;
+	width: 100%;
+}
+
+.imageOverlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+/*	align-items: center;*/
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	border-radius: 3rem;
+	backdrop-filter: blur(5px);
+}
+
+
+.imageOverlay>* {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.imageOverlay:hover {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.overlayTitle {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 600;
+	font-style: normal;
+	font-size: 1.6rem;
+	margin: 2rem;
+}
+
+.overlayDescription {
+	font-family: "Krub", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 1.1rem;
+	margin: 2rem;
+	margin-top: 0rem;
+}
+
+.overlayLink{
+	color: white;
+	text-decoration: underline;
+}
+
+.resourcesGrid> .box-4x2:nth-child(2){
+	background-image: url(resource-2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.resourcesGrid> .box-4x2:nth-child(3){
+	background-image: url(resource-3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.resourcesGrid> .box-4x2:nth-child(4){
+	background-image: url(resource-4.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+/*START OF PAGE 2.1 (Y-MAKEUP)*/
+
+
+.headerGridFour{
+ 	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	padding: 8rem 3rem 3rem 8rem;
+   	grid-column-gap: .5rem;
+  	grid-row-gap: 2rem;
+ 	
+  	background-image: url(background-y.png);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative; 
+  	overflow: visible;
+  	font-family: "Montaga", serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: black;
+
+
+ }
+.youth-4x2 {
+  	grid-column-end: span 4;
+  	grid-row-end: span 2;
+  	position: relative; 
+  	overflow: visible;
+  	font-size: 1.8rem;
+
+}
+
+
+.headerGridFour> .youth-4x2:last-child{
+	background-image: url(heading.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 3rem;
+}
+
+.youth-4x2 p {
+	margin: 3rem;
+	
+}
+
+.youth-4x2>p:first-child{
+	font-size: 3.6rem;
+	margin-bottom: 5rem;
+
+}
+
+.youth-4x2>p:nth-child(2){
+	margin-right: 10rem;
+	
+}
+
+.youth-4x2>p:last-child{
+	margin-right: 10rem;
+	
+}
+
+.youthGrid{
+	background-color: white;
+
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+   	grid-column-gap: 4rem;
+  	grid-row-gap: 2rem;
+  	position: relative; 
+  	overflow: visible;
+}
+
+.makeupIMG{
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-end: span 4;
+	overflow: visible;
+	 position: absolute;
+  z-index: 1; /* Ensure the image is above the content */
+  margin: 3rem;
+}
+
+.cleanContent{
+	grid-column-start: 3;
+	grid-column-end: span 6;
+	color: black;
+	background-color: #EFEDFF;
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.textContent{
+	margin-top: 7rem;
+	margin-left: 10rem;
+	margin-right: 13rem;
+	margin-bottom: 5rem;
+	font-family: "Montaga", serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: black;
+  	font-size: 1.5rem;
+}
+
+.textContent >p:first-child{
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 700;
+	font-style: normal;
+	font-size: 3rem;
+	margin-bottom: 4rem;
+
+}
+
+.textContent >p:nth-child(2){
+	margin-bottom: 2rem;
+
+}
+.textContent >p:nth-child(3){
+	margin-bottom: 2rem;
+
+}
+
+.skinIMG{
+	margin-left: 10rem;
+}
+
+.dot {
+  height: 12vmax;
+  width: 23vmin;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4rem;
+  margin-bottom: 3rem;
+}
+
+.skinIMG>.dot:first-child{
+	background-image: url(skincare-1.jpeg);
+	background-size: cover	;
+	background-repeat: no-repeat;
+
+}
+
+.skinIMG>.dot:nth-child(2){
+	background-image: url(skincare-2.jpeg);
+	background-size: cover	;
+	background-repeat: no-repeat;
+
+}
+
+.skinIMG>.dot:nth-child(3){
+	background-image: url(skincare-3.jpeg);
+	background-size: cover	;
+	background-repeat: no-repeat;
+
+}
+
+#youthText{
+	color: black;
+	font-size: 2.3rem;
+	grid-column-end: span 8;
+	font-weight: 600;
+	margin: 5rem;
+	margin-bottom: 1.7rem;
+	margin-top: 0;
+}
+
+.youthGrid> a{
+	color: black;
+	grid-column-start: 6;
+	grid-column-end: 9;
+	margin-bottom: 4rem;
+	padding-bottom: 1rem;
+	
+}
+
+.youthGrid> a >.linkButton{
+	background-color:#EFEDFF ;
+}
+
+/*START OF PAGE 2.2 (O-MAKEUP)*/
+
+.headerGridFive{
+ 	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	padding-top: 5.2rem;
+   	grid-column-gap: .5rem;
+  	grid-row-gap: 2rem;
+  	position: relative; 
+  	overflow: visible;
+  	font-family: "Montaga", serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: black;
+  	background-color: #FFF9EE;
+
+
+}
+
+.old-4x2 {
+  	grid-column-end: span 4;
+  	grid-row-end: span 2;
+  	position: relative; 
+  	overflow: visible;
+  	font-size: 1.8rem;
+
+}
+
+
+.headerGridFive> .old-4x2:first-child{
+	background-image: url(old.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.old-4x2> .textContent{
+	margin: 7.5rem;
+}
+
+
+
+.old-4x2> .textContent>p:first-child{
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+  	font-weight: 400;
+	font-style: normal;
+	
+}
+
+.oldGrid{
+	background-color: #B9926E;
+
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	padding: 5rem 15rem 5rem 15rem;
+   	grid-column-gap: 4rem;
+  	grid-row-gap: 2rem;
+  	position: relative; 
+  	overflow: visible;
+
+}
+
+.oldGrid>p:first-child{
+	grid-column-end: span 8;
+	justify-self: center;
+	font-family: "Montserrat Subrayada", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	font-size: 2rem;
+  	color: black;
+}
+
+.oldGrid>p:nth-child(2){
+	grid-column-end: span 8;
+	justify-self: center;
+	font-size: 1.5rem;
+	color: black;
+
+}
+
+.glide{
+	grid-column-start: 3;
+	grid-column-end: span 4;
+	border-radius: 4rem;
+	border:solid;
+	background-color: lavenderblush;
+}
+
+.glide__slide>img {
+  width: 100%;
+}
+
+.glide__arrow{
+	background-color: black;
+}
+
+
+.oldGrid> a{
+	color: black;
+	grid-column-start: 6;
+	grid-column-end: 9;
+	padding-bottom: 1rem;
+	
+}
+
+
+/*START OF PAGE 2.3 (FASHION)*/
+
+.fashionGrid{
+	background-color: #FFF9EE;
+
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	padding: 8rem 5rem 5rem 5rem;
+   	grid-column-gap: 4rem;
+  	grid-row-gap: 2rem;
+  	position: relative; 
+  	overflow: visible;
+  	font-size: 1.5rem;
+
+  	color: black;
+
+}
+
+.item-2x4{
+	display: grid;
+	grid-column-end: span 2;
+}
+
+
+.fashionGrid>p:first-child{
+	font-size: 3rem;
+
+}
+
+.fashionGrid>p:nth-child(2){
+	grid-column-end: span 4;
+
+}
+
+.fashionGrid>p:nth-child(4){
+	grid-column-end: span 4;
+
+}
+
+.fashionGrid>p:nth-child(3){
+	font-weight: 600;
+	font-size: 1.7rem;
+
+}
+
+.fashionGrid>p:nth-child(5){
+	font-weight: 600;
+	font-size: 1.7rem;
+
+}
+
+.fashionGrid>p:nth-child(10){
+	font-weight: 600;
+	font-size: 1.7rem;
+	text-decoration: underline;
+	text-underline-offset:1rem ;
+	margin-bottom: 3rem;
+
+}
+.item-2x4>img{
+	width: 100%;
+}
+
+.fashionGrid> a{
+	color: black;
+	grid-column-start: 6;
+	grid-column-end: 9;
+	padding-bottom: 1rem;
+
+	
+}
+
+
+/*START OF PAGE 2.4 (GAMING)*/
+
+
+.gamingGrid{
+	background-color: #1E0D22;
+	display: grid;
+  	grid-template-columns: repeat(8, 1fr);
+  	padding: 8rem 5rem 5rem 5rem;
+   	grid-column-gap: 0rem;
+  	grid-row-gap: 2rem;
+  	position: relative; 
+  	overflow: visible;
+  	font-size: 1.2rem;
+
+  	color: white;
+
+}
+
+.gaming-4x4{
+	grid-column-end: span 4;
+}
+
+#firstGaming{
+	padding: 4rem;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.gaming-4x4>p{
+	margin-bottom: 3rem;
+}
+
+.gaming-4x4>p:first-child{
+	font-weight: 800;
+	font-size: 3rem;
+	background: linear-gradient(to right, white,#7C51F8);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 0;
+}
+
+.gaming-4x4>p:nth-child(2){
+	font-weight: 800;
+	font-size: 3rem;
+	background: linear-gradient(to right, white,#7C51F8);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: transparent;
+}
+
+.linkButtonGame{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem	;
+	height: 5.5rem;
+	width: 16rem;
+	border-radius: 4rem ;
+	background-color: #D7B3EC;
+	margin-bottom: 4rem;
+
+}
+
+.gifRow{
+	display: flex;
+	flex-direction: row;
+}
+
+.gaming-4x4 a{
+	color: black;
+	margin-top: 3rem;
+	margin-left: 3rem;
+	padding-bottom: 1rem;
+
+	
+}
+
+.gamingGrid>p:nth-child(3){
+	grid-column-end: span 4;
+}
+
+.gamingGrid>a{
+	grid-column-start: 8;
+	color: black;
+}
+
+
